@@ -1,0 +1,219 @@
+:root {
+    --primary-color: #2a764a;
+    --secondary-color: #d44d4d;
+    --text-color: #030000;
+    --background-image-url: url('./Images/Kobeback1.jpg');
+    --background-career-url: url('./Images/kobeback3.jpg');
+    --background-contact-url: url('./Images/kobeback2.jpg');
+    --background-gallery-url: url('./Images/kobeback4.jpg');
+    --header-height: 80px;
+    --footer-height: 60px;
+    --sidebar-width: 250px;
+    --border-radius: 10px;
+    --transition-duration: 0.3s;
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-family);
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+  }
+  
+  header {
+      background: linear-gradient(to right, #0f0f0f, #434343);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      height: var(--header-height);
+  }
+  
+  header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1.5px;
+  }
+  
+  nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin: 0 15px;
+  }
+  
+  nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+  }
+  
+  nav ul li a:hover {
+      color: #c4bea1;
+  }
+  
+  main {
+      flex: 1;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+  }
+  
+  .content-section {
+      margin-top: 240px;
+      background-color: #ffffff00;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+  }
+  
+  h2 {
+      color: #fff;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+  }
+  
+  ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  ul li {
+      background: #ebda79;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: var(--border-radius);
+  }
+  
+  .main-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+      background-color: #0f0f0f;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      margin-top: auto; 
+      height: var(--footer-height);
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: var(--border-radius);
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+  }
+  
+  form textarea {
+      resize: vertical;
+  }
+  
+  form button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #0f0f0f;
+      color: #fff;
+      border: none;
+      border-radius: var(--border-radius);
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color var(--transition-duration);
+  }
+  
+  form button:hover {
+      background-color: #333;
+  }
+  
+  .content-section1 {
+      margin-bottom: 90px;
+      margin-top: 60px;
+      color: #fff;
+  }
+  
+  .content-section2 {
+      margin-bottom: 50px;
+      margin-top: 100px;
+      color: #fff;
+  }
+  
+  .content-section3 {
+      margin-top: 300px;
+  }
+  
+  .background-career {
+      height: 100vh;
+      background-image: var(--background-career-url);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  
+  .background-contact {
+      height:100vh;
+      background-image: var(--background-contact-url);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  
+  .background-home {
+      height: 100vh;
+      background-image: var(--background-image-url);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  
+  .background-gallery {
+      height: 100vh;
+      background-image: var(--background-gallery-url);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  
+  .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px; 
+  }
+  
+  .gallery-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
